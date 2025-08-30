@@ -1,0 +1,23 @@
+/* public class java_tutorial.Test {
+     public static void main(String[] args) {
+                code goes here
+}
+Procedural programming: the program contains the main() method, and other
+        user defined method/s nested inside the calls
+
+ public class java_tutorial.Test {
+        public static void main (String[] args){
+            code
+                    }
+         public static void test()  {
+
+         }
+   *classes can have the same name
+
+ Object-oriented Programming
+    the program contains more than one classes,
+    only contains the main() method
+
+
+*/
+
