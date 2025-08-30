@@ -1,4 +1,4 @@
-/* public class java_tutorial.Test {
+public class java_tutorial.Test {
      public static void main(String[] args) {
                 code goes here
 }
@@ -28,3 +28,102 @@ input date(memory )  --- > process --> output
 
 if statement will always have logical expression -  condition
 
+for loop:
+    assign a variable named i; logical operation; increment;
+       for(int i = 0; i<30; i++) {
+        System.out.print(i + " ")
+       }
+data types
+    Primitive - int, double, char, boolean
+    Reference - arrays, Strings, objects
+        not created by java
+        defined by the programmer
+Object-Oriented Programming - OOP
+    create your own classes and use them to define/create object
+    Objects are are created from classes
+        classes are blueprints from which you create objects
+    an object is an instance of its class
+    class encapsulate both variables and methods
+    class methods are called instance methods
+        ***will not have the keyword static
+    object will contain both variables and methods
+    EX:
+        car, circle, person, array, bank account
+When creating a class -
+    define name
+    must start with uppercase letter
+    must define variables (data structures)
+    must define instance methods (algorithm )
+    Variables and methods will be copied to any other object created from the class.
+        methods will know variables and will be able to manipulate them
+
+classes are used as a data type to define an objects(variables)
+ called "user defined data types "
+ abstract data type
+    can include any variable of any type inside the class.
+
+ classes have special methods called "constructors"
+    used with the "new" operator to create objects from the class
+    are methods that don't have a type
+        neither void or returning methods
+        can be overloaded
+            can have multiple constructors in the same class
+    used to create objects and set value for its variables during the creation process.
+    can only be called one time (with creating the object).
+    should have the same name as class
+
+   Define class variables: those variables that will be copied inside each object:
+            Access_modifier data_type variable_name
+                private       double       radius;
+    Access modifiers are usually private to not allow the user to access them from outside the class.
+
+    Define instance methods: Those methods that will be copied to each object:
+            Access_modifier type method_name(){
+
+            }//end of method
+
+            public void setColor(){
+
+
+            }//end of instance method setColor()
+
+    Instance methods
+        can be void or value returning methods
+        will not have the key word static
+        can be called by:
+            their name() if they are call by another instance method in the same clas  object of the class
+            Object_Name.method_name() if they are called by an object of the class.
+
+user of the class can only access the public components of the class
+    will only be able to access the private variables through the public methods
+
+Class Design
+    must have public methods to
+     access
+     manipulate (set new values, display the value, get the value and any other processing )
+    the class variables
+    EX:
+        method that is used to set a new color                      should be named  setColor()
+        method that is used to get the value or the Circle's color "            "   get color()
+        method that is used to display the contents of an array    "             " display()
+            inside an object
+        method that is used to insert an element in an array inside "            " insert()
+            an object
+        method that is used to insert an amount in a bank account  "             "  deposit()
+            inside an object
+            \
+Class_Name object_name = new Constructor();
+    constructor can only be called one time
+    if used to create the object
+        the values of the variables can only be changed if have method to manipulate the variable
+
+Variables defined inside a class are diff from those defined in
+    a method
+    another block of code
+
+ variables  defined in a method should be initialized  before they are used
+    should assign them values before using them.
+
+ variables defined inside a class will be copied inside the object when you create an object
+    if using a constructor that does not assign values for those variables
+        they will be initialized to their default values:
