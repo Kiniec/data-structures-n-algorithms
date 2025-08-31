@@ -1,4 +1,4 @@
-/* public class java_tutorial.Test {
+public class java_tutorial.Test {
      public static void main(String[] args) {
                 code goes here
 }
@@ -19,5 +19,17 @@ Procedural programming: the program contains the main() method, and other
     only contains the main() method
 
 
-*/
+Java Project -->
+input date(memory )  --- > process --> output
+1 code
+2 user
+3 file
+4 Database
 
+if statement will always have logical expression -  condition
+
+for loop:
+    assign a variable named i; logical operation; increment;
+       for(int i = 0; i<30; i++) {
+        System.out.print(i + " ")
+       }
