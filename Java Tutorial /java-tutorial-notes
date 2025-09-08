@@ -78,14 +78,13 @@ classes are used as a data type to define an objects(variables)
     Access modifiers are usually private to not allow the user to access them from outside the class.
 
     Define instance methods: Those methods that will be copied to each object:
-            Access_modifier type method_name(){
-
+            Access_modifier                  type                method_name(){
+                public          void or value returning            xxxx
             }//end of method
 
-            public void setColor(){
-
-
-            }//end of instance method setColor()
+            public void setColor()
+             {
+             }//end of instance method setColor()
 
     Instance methods
         can be void or value returning methods

@@ -19,7 +19,7 @@ public class ArraysWithStaticMethods {
         }//end of for loop
         int [] y = new int [5]; // creates array y with 5 indexes
         for (int i =0; i<y.length; i++){
-            y[i] = (int) (5  + Math.random() * 25);
+            y[i] = (int) (5  + Math.random() * 25); //Math.random() is number 0 to 1 excluding 1
         }//end of for loop
 
         display(y);
