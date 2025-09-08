@@ -2,7 +2,7 @@ package Chapter_1_Overview;
 
 public class TestBankAccount {
     public static void main (String[]args){
-        BankAccount ba1 = new BankAccount(100.00);//create object
+        BankAccount ba1 = new BankAccount(100.00);//create object 
         System.out.print("Before transactions, ");
         ba1.display(); //display balance
         ba1.deposit(74.35); //make deposit
