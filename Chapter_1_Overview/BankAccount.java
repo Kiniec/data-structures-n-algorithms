@@ -7,6 +7,7 @@ public class BankAccount {
     }// constructor
 
     public void deposit( double amount ){// makes deposit
+
         balance = balance + amount;
     }//end of instance method deposit
 
