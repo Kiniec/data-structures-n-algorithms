@@ -1,4 +1,4 @@
-package Chapter_2.binary_search;
+/*package Chapter_2.binary_search;
 
 public class OrderedArray {
     private long[]a;
@@ -44,3 +44,4 @@ public void insert ( long value ){
           }///end for
 }///end of insert
 } ///end class OrderArray
+*/

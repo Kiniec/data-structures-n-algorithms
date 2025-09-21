@@ -5,15 +5,16 @@ public class Triangle {
     private double height; // data field type
 
     public Triangle(double x, double y ) { // Constructor
-       base = x;
-       height = y;
-        //System.out.println( "Base: " + x);
-        //System.out.println( "Height: " + y);
+        base = x;
+        height = y;
     }
-    public void setTriangle( ){ //sets setter
-        double b = this.base;
-        double h = this.height;
-    }//end of setter()
+        ///System.out.println( "Base: " + x);
+        ///System.out.println( "Height: " + y);
+   /// }
+    ///public void setTriangle( ){ //sets setter
+       /// double b = this.base;
+       // double h = this.height;
+   /// }///end of setter()
 
 
     public double getBase(){ //set getter
