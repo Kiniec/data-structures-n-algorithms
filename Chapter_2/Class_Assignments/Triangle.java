@@ -8,13 +8,14 @@ public class Triangle {
         base = x;
         height = y;
     }
-        ///System.out.println( "Base: " + x);
-        ///System.out.println( "Height: " + y);
-   /// }
-    ///public void setTriangle( ){ //sets setter
-       /// double b = this.base;
-       // double h = this.height;
-   /// }///end of setter()
+   public void setHeight(double x)
+   {
+       height=x;
+   }
+   public void setBase(double y)
+   {
+       base=y;
+   }
 
 
     public double getBase(){ //set getter
