@@ -1,16 +1,28 @@
 package Chapter_2.Class_Assignments;
 
+
+import static java.lang.Math.max;
+
 public class HighArray {
     private long [] a;
     private int nElems;
 
     public HighArray(int size ){
-        a = new long[size];
+        a = new long [size];
     }///end HighArray
 
-    public void  findMax( long a ){
-
-
+    public long findMax(){
+        int out , in ;
+        for(out = nElems -1; out >0; out--){
+            for(in =0; in < out ; in ++){
+                if ( a [ in ] > a [ in +1] ) {
+                    long temp = a [ in ];
+                    a [ in ] = a [ in +1];
+                    a [ in +1] = temp ;
+                    }///end if
+                } /// end inner
+        } /// end outer
+        return a[nElems-1];
     }///end findMax();
 
     public void insert(long value){

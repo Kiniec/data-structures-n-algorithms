@@ -3,11 +3,11 @@ package Chapter_2.storing_objects;
 public class ClassDataApp {
     public static void main(String[]ars){
         int maxSize =100 ; ///array size
-        ClassDataArray arr1 = new ClassDataArray(maxSize); ///create object
+        DataArray arr1 = new DataArray(maxSize); ///create object
                                                         ///reference to array and create array
        ///insert 10 items
         arr1.insert("Evans", "Patty", 24);
-        arr1.insert("Smith ","Lorriane" , 37);
+        arr1.insert("Smith","Lorriane" , 37);
         arr1.insert("Yee", "Tom", 43);
         arr1.insert("Adams","Henry",63);
         arr1.insert("Hashimoto","Sato",21);
@@ -22,7 +22,7 @@ public class ClassDataApp {
         Person found;
         found = arr1.find(searchKey);
         if(found != null){
-            System.out.println("Found ");
+            System.out.println("Found");
             found.displayPerson();
         }///end if
         else{
@@ -31,12 +31,12 @@ public class ClassDataApp {
 
         System.out.println("Deleting Smith, Yee, and Creswell");
                 ///delete 3 items
-        arr1.delete("Smith ");
+
+        arr1.delete("Smith");
         arr1.delete("Yee");
         arr1.delete("Creswell");
 
-        arr1.displayA(); /// display items again
-
+        arr1.displayA();
 
 
     }///end main()

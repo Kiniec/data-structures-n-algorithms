@@ -11,9 +11,10 @@ public class Person {
         age = a;
     }//end Person
     public void displayPerson(){ /// displays Person's object data
-        System.out.println(" Last name: " + lastName );
-        System.out.println(", First name: " + firstName);
-        System.out.println(", Age: " + age);
+        System.out.print(" Last name: " + lastName );
+        System.out.print(", First name: " + firstName);
+        System.out.print(", Age: " + age);
+        System.out.println();
     }///end display
     public String getLast(){   ///get last name - key field used for searches
         return lastName;

@@ -2,7 +2,7 @@ package Chapter_2.Class_Assignments;
 
 public class TestHighArray {
     public static void main (String[]args) {
-        HighArray arr = new HigArray(100); ///creating object
+        HighArray arr = new HighArray(100); ///creating object
 
         arr.insert(10);;
         arr.insert(20);
@@ -14,8 +14,11 @@ public class TestHighArray {
         arr.insert(50);
         arr.insert(60);
         arr.insert(33);
+
+        arr.display();
+        System.out.print("The largest number is: " + arr.findMax());
     }///end main()
 
-    findMax();
+
 
 }///end class TestHighArray
