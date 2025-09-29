@@ -1,6 +1,6 @@
 package Chapter_2.storing_objects;
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.Arrays;
 
 public class DataArray {
     private Person[] a;  ///reference to array
@@ -31,13 +31,31 @@ public class DataArray {
     }///end find()
 
     public void insert(String last, String first, int age ){ /// put person in array
-        a[nElems] = new Person(last, first, age);
 
 
-        nElems ++;
+            if ( nElems < a.length )
+            {
+                int j ;
+                for ( j =0; j < nElems ; j ++)
+                {
+                    if ( a [ j ].getLast().compareTo(last)>0 )
+                    {
+                        break ;
+                    }
+                } // end for
+                for ( int k = nElems ;k > j ;k --){ // move bigger ones up
+                    a [ k ] = a [k -1];
+                } // end for
+                a [ j ] = new Person(last, first, age) ; // insert it
+                nElems ++;
+            } else
+            {
+                System . out . println ( " Cannot insert , array is full " );
+            }
+        } // end insert ()
 
 
-    }///end insert()
+
 
     public boolean delete (String searchName){
         int j;
