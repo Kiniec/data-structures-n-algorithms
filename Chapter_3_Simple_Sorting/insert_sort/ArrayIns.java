@@ -17,7 +17,7 @@ public class ArrayIns {
         for( int j = 0; j < nElems; j++){      ///for each element
             System.out.print(a[j]   + " ");  ///display it
         }///end for
-        System.out.println(" ");
+        System.out.print(" ");
     }///end display()
 
     public void insertionSort(){
