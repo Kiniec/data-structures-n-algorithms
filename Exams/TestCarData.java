@@ -15,13 +15,13 @@ public class TestCarData {
         arr.insert(c4);
 
 
-       System.out.println("Before sorting: ");
+        System.out.println("Before sorting: ");
         arr.display();
         System.out.println("After sorting: ");
         arr.insertionSort();
         arr.display();
 
-        String searchKey = "BMW"; /// searching for item 55
+        String searchKey = "BMW"; /// searching for item BMW
         if(arr.search(searchKey) != null){
             System.out.println( "Found " + searchKey );
         }///end  if
@@ -33,4 +33,4 @@ public class TestCarData {
 
     }///end main()
 
-}///end TestCarData
+}///end class TestCarData

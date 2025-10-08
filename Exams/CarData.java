@@ -41,22 +41,22 @@ public class CarData {
     }///end insertionSort()
 
     public Car search(String searchKey) {
-        int i;
-  for(i=0;i<nElems;i++)
-  {
-      if(a[i].getMake().equals(searchKey))
-      {
-        break;
-      }
-  }
-  if(i==nElems)
-  {
-      return null;
-  }
-  else {
-      return a[i];
-  }
-
+        int j;
+        for(j=0; j<nElems; j++)
+        {
+            if(a[j].getMake().equals(searchKey))
+            {
+                break;
+            }///end if
+        }///end for
+        if(j == nElems)
+        {
+            return null;
+        }
+        else
+        {
+            return a[j];
+        }///end else
     }///end of find()
 
 }/// end CarData
