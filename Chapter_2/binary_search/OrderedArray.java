@@ -75,5 +75,6 @@ public class OrderedArray {
         for(int j=0 ; j < nElems; j++){
             System.out.print(a[j] + " ");
         }
+        System.out.println();
     }///end of display
 } ///end class OrderArray

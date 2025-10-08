@@ -5,7 +5,6 @@ public class TestOrderedArrays {
         int size = 100;
         OrderedArray arr = new OrderedArray(size);
 
-        //insert 10 elements
         arr.insert(77);
         arr.insert(99);
         arr.insert(44);
@@ -16,17 +15,18 @@ public class TestOrderedArrays {
         arr.insert(0);
         arr.insert(66);
         arr.insert(33);
-        int searchKey = 55; /// searching for item 55
-        if(arr.find(searchKey) != arr.size()){
-            System.out.println( "Found" + searchKey );
-        }///end  if
-        else{
-            System.out.println("Can't Find" + searchKey);
+
+        int searchKey = 55; ///searching for item 55
+        if( arr.find(searchKey) != arr.size()){
+            System.out.println("Found" + searchKey);
+        }///end if
+        else {
+            System.out.println("Can't find" + searchKey);
         }///end else
-        arr.display();///display items
-        arr.delete(0);
-        arr.delete(55);
-        arr.delete(99);
-        arr.display(); /// display after deleting 3 items
-    }///end main method
-}///end TestOrderedarrays
+        arr.display(); /// display items
+        arr.delete(0);///delte items
+        arr.display();///display after deleting 3 items
+
+
+    }///end main()
+}///end class TestOrderedArrays
