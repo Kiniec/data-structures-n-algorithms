@@ -1,11 +1,12 @@
 package Chapter_5_Link_List;
 
 public class Link {
-private int  x;
+private int  number;
+private int x;
 public Link next;
 
-public Link(int number ) {/// constructor
-    x = number;
+public Link(int x ) {/// constructor
+    number = x;
 }///end Link
 
 public void setX(){

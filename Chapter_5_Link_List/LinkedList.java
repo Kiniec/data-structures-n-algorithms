@@ -3,7 +3,7 @@ package Chapter_5_Link_List;
 public class LinkedList {
 
 
-    Private Link first;
+    private  Link first;
     public LinkedList() {
          first = null;
     }///end LinkedList

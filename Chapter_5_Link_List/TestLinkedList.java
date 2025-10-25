@@ -8,7 +8,7 @@ public class TestLinkedList {
 
         l1.setNext(12); */
         LinkedList list = new LinkedList();
-        list.insert();
+        list.insert(10);
     }///end main
 
 } ///end class Link
