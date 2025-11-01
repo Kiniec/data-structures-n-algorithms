@@ -17,13 +17,14 @@ public class Reverse {
     public void revNoDup() {
 
         Stack<Character> myStack = new Stack<Character>();
-
-
-
-        for (int j = 0; j < word.length(); j++) { ///insert items into myStack
-            char ch = word.charAt(j);
-            myStack.push(ch);
-        }///end for
+        myStack.push(word.charAt(0));
+        char temp = word.charAt(0);
+        for (int i = 1; i < word.length(); i++) {
+            if(word.charAt(i) != temp) {
+                myStack.push(word.charAt(i));
+                temp = word.charAt(i);
+            }///end if
+        }///end for loop
 
         String rev ="";
             while ( !myStack.isEmpty() ) { ///reverse myStack
