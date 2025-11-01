@@ -1,6 +1,7 @@
 package Class_Assignments.Assignment_4;
 
 public class Link {
+
     private Link next;
     private Person p;
 

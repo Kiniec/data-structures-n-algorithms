@@ -5,16 +5,16 @@ public class TestLinkList {
 
         LinkList list = new LinkList();
         list.insertFirst("Mary", 7000.0);
-        list.insertFirst("John", 8000.0);
-        list.insertFirst("Jane", 7500.0);
-        list.insertFirst("Jack", 6500.0);
+        list.insertFirst("Saif", 8000.0);
+        list.insertFirst("Alex", 7500.0);
+        list.insertFirst("Alica", 6500.0);
 
         list.display();
-        if( list.find("Alicia")){
+        if( list.find("Alica")!=null){
             System.out.println("Found");
-        }///end if
+       }///end if
         else{
-            System.out.println("Not Found");
+           System.out.println("Not Found");
         }///end else
     }///end main()
 }///end TestLinkList

@@ -27,7 +27,7 @@ public class Person {
     }///end getSalary
 
     public void display(){
-        System.out.println("Name" + name + "- Salary" + salary);
+        System.out.println("Name: " + name + " - Salary: " + salary);
     }///end display()
 
 }///end class Person
