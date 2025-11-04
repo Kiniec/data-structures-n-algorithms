@@ -15,7 +15,7 @@ public class ParsePost {
         int num1, num2, interAns;
         for(j = 0; j < input.length();j++) {
             ch = input.charAt(j);
-        if(ch<='0' && ch>='9') {
+        if(ch>='0' && ch<='9') {
             theStack.push( (int)( ch-'0'));
         }///end if
         else{

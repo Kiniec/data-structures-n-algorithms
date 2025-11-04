@@ -1,4 +1,4 @@
-package Exams;
+package Exams.Exam_1_2025;
 
 public class Car {
      private String make;

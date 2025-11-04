@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class TestParsePost {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter a postfix expression: ");
         String x = input.nextLine();
         ParsePost parse = new ParsePost(x);
         int result = parse.doParse();

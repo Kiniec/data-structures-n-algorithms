@@ -1,7 +1,7 @@
-package Exams;
+package Exams.Exam_1_2024;
 
 public class EmployeeData {
-    private Employee [] a;
+    private Employee[] a;
     private int nElems;
 
     public EmployeeData(int maxSize) {

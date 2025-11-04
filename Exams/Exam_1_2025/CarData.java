@@ -1,6 +1,4 @@
-package Exams;
-
-import Chapter_3_Simple_Sorting.object_sort.Person;
+package Exams.Exam_1_2025;
 
 public class CarData {
     private Car[] a;
