@@ -37,6 +37,6 @@ public class LinkedList {
     }///end display
 
 
-}
+}///end class LinkedinList
 
 
