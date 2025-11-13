@@ -26,7 +26,7 @@ public class RecursionMultiplication {
     }///end main()
 
     public static int multiply(int no1, int no2) {
-        if ( no1 == 1 || no2 == 1 )  {
+        if (  no2 == 1 )  {
             return no1;
         }///end if
         else{
