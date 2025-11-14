@@ -62,7 +62,26 @@ public class Tree {
                     inOrder(root.getRightChild());
                 }///end if
             }///end inOrder()
-    /*Java code for Inorder Traversal: used to create a sorted list of Data in binary tree */
 
     /* Finding the minimum Value: goes left of to children until there are no more children */
+             public int findMin(){
+                 Node current, last = null;
+                 current = root;
+                 while (current != null){
+                     last = current;
+                     current = current.getLeftChild();
+                 }///end while
+                 return last.getNumber();
+             }///end findMin()
+
+    /* Finding the Maximum Value*/
+            public int findMax(){
+                Node current, last = null;
+                current = root;
+                while (current != null){
+                    last = current;
+                    current = current.getRightChild();
+                }///end while
+                return last.getNumber();
+            }///end findMax()
 }///end class Tree
