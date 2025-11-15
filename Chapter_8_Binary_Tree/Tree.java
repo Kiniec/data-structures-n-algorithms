@@ -84,4 +84,77 @@ public class Tree {
                 }///end while
                 return last.getNumber();
             }///end findMax()
+
+    /*Deleting a node*/
+    public boolean delete (int key){
+        Node current = root;
+        Node parent = root;
+        boolean isLeftChild = true;
+
+        while(current.getNumber() != key){
+            parent = current;
+            if( key < current.getNumber()){
+                current = current.getLeftChild();
+            }///end if
+            else{
+                isLeftChild = false;
+                current = current.getRightChild();
+            }
+            if (current == null){
+                return false;
+            }///end if
+        }///end while
+        if (current.getLeftChild() == null && current.getRightChild() == null ){
+            if (current == root){
+                root = null;
+            }///end inter if
+            else if (isLeftChild){
+                parent.setLeftChild(null);
+            }/// end else if
+            else{
+                parent.setRightChild(null);
+            }///end else
+        }///end if
+
+        else if( current.getRightChild() == null  ){
+            if (current == root){
+                root = current.getLeftChild();
+            }///end if
+            else if (isLeftChild){
+                parent.setLeftChild(current.getLeftChild());
+            }///end else if
+            else{
+                parent.setRightChild(current.getRightChild());
+            }///end else
+        }///end else if
+
+        else if( current.getLeftChild() == null){
+            if( current == null){
+                root = current.getRightChild();
+            }///end if
+            else if (isLeftChild){
+                parent.setLeftChild(current.getRightChild());
+            }///end else if
+            else{
+                parent.setRightChild(current.getRightChild());
+            }///end else
+        }///end else if
+        else{
+            Node successor = getSucessor(current);
+                if(current == root){
+                    root = successor;
+                }///end if
+                else if (isLeftChild){
+                    parent.setLeftChild(successor);
+                }///end else if
+                else {
+                    parent.setRightChild(successor);
+                }///end else
+                successor.setLeftChild(current.getLeftChild());
+        }///end else
+        return true;
+
+    }///end delete()
+
+
 }///end class Tree
