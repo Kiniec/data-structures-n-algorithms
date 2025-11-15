@@ -154,6 +154,9 @@ public class Tree {
         }///end else
         return true;
 
+     private Node getSucessor(Node x){
+
+        }
     }///end delete()
 
 
