@@ -140,7 +140,7 @@ public class Tree {
             }///end else
         }///end else if
         else{
-            Node successor = getSucessor(current);
+            Node successor = getSuccessor(current);
                 if(current == root){
                     root = successor;
                 }///end if
@@ -154,9 +154,21 @@ public class Tree {
         }///end else
         return true;
 
-     private Node getSucessor(Node x){
-
-        }
+     private Node getSuccessor( Node x){
+        Node successorParent = x;
+        Node successor = x;
+        Node current = x.getRightChild();
+        while (current != null){
+            successorParent = successor;
+            successor = current;
+            current = current.getLeftChild();
+        }///end while
+        if(successor != x.getRightChild()){
+            successorParent.setLeftChild(successor.getRightChild());
+            successor.setRightChild(x.getRightChild());
+        }///end if
+            return successor;
+        }///end getSuccessor()
     }///end delete()
 
 
