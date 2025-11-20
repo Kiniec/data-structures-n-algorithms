@@ -156,6 +156,8 @@ public class Tree {
         }///end else
         return true;
     } ///end delete()
+
+    /* Get the parent node above child*/
     private Node getSuccessor(Node x){
         Node successorParent = x;
         Node successor = x;
@@ -169,7 +171,7 @@ public class Tree {
             successorParent.setLeftChild(successor.getRightChild());
             successor.setRightChild(x.getRightChild());
         }///end if
-        return null ;
+        return successor ;
     }///end getSuccessor()
 
 

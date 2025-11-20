@@ -14,8 +14,8 @@ public class TestTree {
         theTree.inOrder(theTree.getRoot());
         int x = theTree.findMin();
         int y = theTree.findMax();
-        System.out.println("Minimum" + x);
-        System.out.println("Maximum" + y);
+        System.out.println("Minimum " + x);
+        System.out.println("Maximum " + y);
         theTree.delete(25);
         theTree.inOrder(theTree.getRoot());
 

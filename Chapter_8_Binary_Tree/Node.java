@@ -17,7 +17,7 @@ public class Node {
     }///end getNumber()
 
     public void displayNode() {
-        System.out.print(number);
+        System.out.println(number);
     }///end displayNode()
 
     public Node getLeftChild() {
