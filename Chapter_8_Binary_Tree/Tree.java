@@ -2,6 +2,8 @@ package Chapter_8_Binary_Tree;
 
 public class Tree {
     private Node root;
+
+
     public Tree() {
         root = null;
     }///end constructor Tree
@@ -36,7 +38,7 @@ public class Tree {
 
     public Node find(int key){
         Node current = root;
-        while ( current.getNumber() != key){
+        while ( current.getNumber() != key){ /// checking root
             if (key < current.getNumber()){
                 current = current.getLeftChild();
             }///end if
@@ -153,11 +155,11 @@ public class Tree {
                 successor.setLeftChild(current.getLeftChild());
         }///end else
         return true;
-
-     private Node getSuccessor( Node x){
+    } ///end delete()
+    private Node getSuccessor(Node x){
         Node successorParent = x;
         Node successor = x;
-        Node current = x.getRightChild();
+        Node current = x;
         while (current != null){
             successorParent = successor;
             successor = current;
@@ -167,9 +169,9 @@ public class Tree {
             successorParent.setLeftChild(successor.getRightChild());
             successor.setRightChild(x.getRightChild());
         }///end if
-            return successor;
-        }///end getSuccessor()
-    }///end delete()
+        return null ;
+    }///end getSuccessor()
+
 
 
 }///end class Tree
