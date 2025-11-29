@@ -1,0 +1,28 @@
+    what happens when you use .usedelimiter in java
+    import java.util.Scanner;
+
+    public class DelimiterExample {
+        public static void main(String[] args) {
+            String input = "apple,banana,orange";
+            Scanner scanner = new Scanner(input);
+
+            // Default behavior (whitespace delimiter) - would treat the whole string as one token
+            System.out.println("Default delimiter output:");
+            while (scanner.hasNext()) {
+                System.out.println(scanner.next());
+            }
+            scanner.close(); // Close the scanner after use
+
+            // Re-initialize for the next example
+            scanner = new Scanner(input);
+
+            // Using a custom delimiter (comma)
+            scanner.useDelimiter(",");
+            System.out.println("\nCustom delimiter (',') output:");
+            while (scanner.hasNext()) {
+                System.out.println(scanner.next());
+            }
+            scanner.close();
+        }
+    }
+

@@ -6,11 +6,13 @@ public class LinkedList {
     private Link first;
 
     public LinkedList() {
-         first = null;
+
+        first = null;
     }///end LinkedList
 
     public boolean isEmpty() {
-    return first == null;
+
+        return first == null;
     }///end isEmpty
 
     public void insertFirst(int x) { ///insert at first
