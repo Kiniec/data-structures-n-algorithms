@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Student {
     private String name;
-    private int  quiz;
-    private int assignment;
-    private int exams;
-    private int project;
+    private String  quiz;
+    private String assignment;
+    private String exams;
+    private String  project;
 
-    public Student(String n, int q, int a, int e, int p) {
+    public Student(String n, String q, String a, String e, String p) {
+        /*String n, int q, int a, int e, int p*/
         name = n;
         quiz = q;
         assignment = a;
@@ -21,23 +22,27 @@ public class Student {
         return name;
     }///end getName()
 
-    public int getQuiz() {
+    public String getQuiz() {
+        int qq = Integer.parseInt(quiz); ///return integer
         return quiz;
     }///end getQuiz()
 
-    public int getAssignment() {
+    public String getAssignment() {
+        int aa = Integer.parseInt(assignment);
         return assignment;
     }///end getAssignment()
 
-    public int getExam() {
+    public String getExam() {
+       int ee = Integer.parseInt(exams);
         return exams;
     }///end getExams()
 
-    public int getProjects() {
+    public String  getProjects() {
+        int pp = Integer.parseInt(project);
         return project;
     }///end getProjects
 
-    public void displayPerson(){
+    public void displayStudent(){
         System.out.print( "Name: " + name + "Quizes Grade: " + quiz + "Assignments Grade: "+ assignment + "Exams Grade: " + exams + "Project Grade: "+ project);
     }///end display
 }///end class Student

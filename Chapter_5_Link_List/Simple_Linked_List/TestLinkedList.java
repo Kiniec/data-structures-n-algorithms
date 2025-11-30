@@ -1,4 +1,4 @@
-package Chapter_5_Link_List.Simple_Linked_List;
+/*package Chapter_5_Link_List.Simple_Linked_List;
 
 public class TestLinkedList {
     public static void main(String[] args) {
@@ -20,6 +20,6 @@ public class TestLinkedList {
 
     }///end main
 
-} ///end class Link
+} ///end class Link */
 
 

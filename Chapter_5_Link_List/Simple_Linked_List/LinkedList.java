@@ -1,4 +1,4 @@
-package Chapter_5_Link_List.Simple_Linked_List;
+/*package Chapter_5_Link_List.Simple_Linked_List;
 
 public class LinkedList {
 
@@ -53,4 +53,4 @@ public class LinkedList {
         return size;
     }///end size()
 
-}///end class LinkedList
+}///end class LinkedList */

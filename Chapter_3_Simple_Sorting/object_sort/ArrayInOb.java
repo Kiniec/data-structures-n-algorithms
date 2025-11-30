@@ -5,6 +5,7 @@ public class ArrayInOb {
     private int nElems;         ///number of data items
 
     public ArrayInOb(int max){
+
         a = new Person[max];        ///create the array
     }/// end ArrayInOb constructor
 
