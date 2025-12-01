@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Test {
     public static void main(String[] args) throws FileNotFoundException {
         StudentData s = new StudentData(100);
-        s.insert();
+
 
 
 
