@@ -1,16 +1,16 @@
 package Final_Project_2025_V2;
 
-import java.io.File;
-import java.util.Scanner;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.ArrayList;
+
 
 public class Test {
     public static void main(String[] args) throws FileNotFoundException {
-        StudentData s = new StudentData(100);
 
+        StudentData s = new StudentData(); /// creates new Studnet object here in main
+
+        s.getFile(); /// call method using Student object to get info for file, insert, sort into obeject
+        s.display(); /// displays each Student
+        s.getCount(); /// diplays the sum of letter grades
 
 
 

@@ -1,48 +1,62 @@
 package Final_Project_2025_V2;
 
-import java.util.Scanner;
+
 
 public class Student {
-    private String name;
-    private String  quiz;
-    private String assignment;
-    private String exams;
-    private String  project;
 
-    public Student(String n, String q, String a, String e, String p) {
-        /*String n, int q, int a, int e, int p*/
-        name = n;
-        quiz = q;
-        assignment = a;
-        exams = e;
-        project = p;
-    }///end constructor Student
+    /* variables for class Student*/
+    private String n;
+    private int  q;
+    private int a;
+    private int e;
+    private int  p;
+    private char final_letter_grade;
+    private int final_numerical;
 
-    public String getName() {
-        return name;
-    }///end getName()
+    public Student(String name, int quiz, int assignment, int exam, int project) { /// constructor creates object for each student
+        n = name;
+        q = quiz;
+       a = assignment;
+          e  = exam;
+          p =project;
+        gradeCalc();
+        finalGrade();
+    }///end Student constructor
 
-    public String getQuiz() {
-        int qq = Integer.parseInt(quiz); ///return integer
-        return quiz;
-    }///end getQuiz()
 
-    public String getAssignment() {
-        int aa = Integer.parseInt(assignment);
-        return assignment;
-    }///end getAssignment()
+    ///end constructor Student
 
-    public String getExam() {
-       int ee = Integer.parseInt(exams);
-        return exams;
-    }///end getExams()
+    public String getName() {///  method used to get parsed student name
+        return n;
+    }///end getName
 
-    public String  getProjects() {
-        int pp = Integer.parseInt(project);
-        return project;
-    }///end getProjects
+    public char getGrade() { /// method used to get Letter grade. A char is returned
+        return final_letter_grade;
+    }///end getGrade
 
-    public void displayStudent(){
-        System.out.print( "Name: " + name + "Quizes Grade: " + quiz + "Assignments Grade: "+ assignment + "Exams Grade: " + exams + "Project Grade: "+ project);
+    public void finalGrade() { ///  method used to caluculate number and
+        if (final_numerical >= 90) {
+            final_letter_grade = 'A';
+        }///end if
+        else if (final_numerical >= 80) {
+                final_letter_grade = 'B';
+        } ///end else if
+        else if (final_numerical >= 70) {
+            final_letter_grade = 'C';
+        }  ///end else if
+        else if (final_numerical >= 60) {
+            final_letter_grade = 'D';
+        }  ///end else if
+        else {
+            final_letter_grade = 'F';
+        }///end else
+    }///end finalGrade
+
+    private void  gradeCalc(){ /// method used to calculate Student's grade
+        final_numerical = q  +  a  + e +  p;
+    }///end gradeCalc
+
+    public void displayStudent(){ /// method displays students with name and letter
+        System.out.print( "Name: " + n + ", " + "Letter Grade: " + final_letter_grade + "\n" );
     }///end display
 }///end class Student

@@ -46,7 +46,7 @@ public class DataArray {
                 for ( int k = nElems ;k > j ;k --){ // move bigger ones up
                     a [ k ] = a [k -1];
                 } // end for
-                a [ j ] = new Person(last, first, age) ; // insert it
+                a [ j ] = new Person(last, first, age); // insert it
                 nElems ++;
             } else
             {
